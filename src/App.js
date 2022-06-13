@@ -4,8 +4,6 @@ import  { storage} from "./data/Data";
 import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
 import { v4} from 'uuid';
 
-
-
 function App() {
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]); //dispalying all images
@@ -40,7 +38,8 @@ function App() {
 
       {imageList.map(url=>{
         return <img src={url} alt=""/>
-      })}
+      })} 
+ 
     </div>
   );
 }
